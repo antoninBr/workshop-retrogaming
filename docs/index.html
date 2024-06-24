@@ -46,12 +46,19 @@
 					</section>
 					<section>
 						<h2>Megadrive</h2>
-						<ul>
-							<li>SEGA</li>
-							<li>40 millions</li>
-							<li>Presque 10 ans</li>
-							<li>Plusieurs versions</li>
-						</ul>
+						<div class='multiCol'>
+							<div class="col">
+								<img src="img/genesis.png"/>
+							</div>	
+							<div class="col">
+								<ul>
+									<li>SEGA</li>
+									<li>40 millions</li>
+									<li>Presque 10 ans</li>
+									<li>Plusieurs versions et addons</li>
+								</ul>
+							</div>
+						</div>
 					</section>
 					<section>
 						<h2>La bête</h2>
@@ -60,27 +67,90 @@
 							<li>64 ko de RAM et 64 ko de mémoire vidéo</li>
 							<li>Processeur secondaire Zilog Z80</li>
 							<li>Modifiée, switch 50/60 Hz</li>
+							<li>Toujours peritel (adaptateur hdmi existe)</li>
 							<li>Easy Cash (50 balles)</li>
 						</ul>
 					</section>
 					<section>
 						<h2>Anbernic RG 351P</h2>
-						<ul>
-							<li>Rockchip QuadCore RK3326 1,5 GHz</li>
-							<li>DDR3L 1Go</li>
-							<li>Dalle IPS 480x320</li>
-							<li>3500 mAh</li>
-							<li>Carte microSD 64Go</li>
-						</ul>
+						<div class='multiCol'>
+							<div class="col">
+								<img src="img/RG351P.png"/>
+							</div>	
+							<div class="col">
+								<ul>
+									<li>Rockchip QuadCore RK3326 1,5 GHz</li>
+									<li>DDR3L 1Go</li>
+									<li>Dalle IPS 480x320</li>
+									<li>3500 mAh</li>
+									<li>Carte microSD HC 64Go</li>
+								</ul>
+							</div>
+						</div>
 					</section>
 					<section>
 						<h2>Concrêtement</h2>						
 						<ul>
 							<li>NES, SNES, Megadrive, PS1, ...</li>
 							<li>Jusqu'à la PSP</li>
-							<li>Firmware EmuElec</il>
+							<li>Firmware EmuElec 💩</il>
 						</ul>
-					</section>			
+					</section>		
+					<section>
+						<h2>AmberElec</h2>
+						<div class='multiCol'>
+							<div class="col">
+								<img src="img/AmberELEC-PC.png"/>
+							</div>	
+							<div class="col">						
+								<ul>
+									<li><a href="https://amberelec.org/">Le site</a></li>
+									<li>v 20230203</li>
+									<li>Firmware communautaire (RetroArch)</il>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>Anbernic RG 35XX</h2>
+						<div class='multiCol'>
+							<div class="col">
+								<img src="img/ANBERNIC-RG35XX-GREY-300x300.png"/>
+							</div>	
+							<div class="col">
+								<ul>
+									<li>Quad-core ARM Cortex-A9 1,5 GHz</li>
+									<li>DDR3 256MB</li>
+									<li>Dalle IPS 640x480</li>
+									<li>2600 mAh</li>
+									<li>2 x Carte microSD HC 64Go</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>Concrêtement</h2>						
+						<ul>
+							<li>NES, SNES, Megadrive, N64, ...</li>
+							<li>Jusqu'à la PS1</li>
+							<li>Firmware EmuElec 💩</il>
+						</ul>
+					</section>		
+					<section>
+						<h2>Garlic OS</h2>
+						<div class='multiCol'>
+							<div class="col">
+								<img src="img/boot_image-300x225.bmp"/>
+							</div>	
+							<div class="col">						
+								<ul>
+									<li><a href="https://www.patreon.com/posts/garlicos-for-76561333">Le site</a></li>
+									<li>v 1.4.9</li>
+									<li>Firmware communautaire (RetroArch)</il>
+								</ul>
+							</div>
+						</div>
+					</section>	
 				</section>
 				<section>
 					<section>
@@ -144,6 +214,19 @@
 				position: absolute;
 				bottom: 0%;
 				left: 0%;
+			}
+			.multiCol {
+				display: table;
+				table-layout: fixed;
+				width: 100%;
+				text-align: left;
+				.col {
+					display: table-cell;
+					vertical-align: top;
+					width: 50%;
+					padding: 2% 0 2% 3%;
+					&:first-of-type { padding-left: 0; }
+				}
 			}
 		</style>
 		
